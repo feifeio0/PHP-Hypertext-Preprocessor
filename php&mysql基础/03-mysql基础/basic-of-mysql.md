@@ -72,14 +72,14 @@
 > 3.建表
 >> create table 表名（
 
-  id int primary key auto_increment,
+>>   id int primary key auto_increment,
   
-  name char(20),
+>>   name char(20),
   
-  content varchar(200),
+>>   content varchar(200),
   
-  pubtime datatime
+>>   pubtime datatime
   
-）charset utf8
+>> ）charset utf8
 
 **在php与mysql中utf8,在html中utf-8**
