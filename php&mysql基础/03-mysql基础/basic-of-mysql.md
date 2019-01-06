@@ -78,7 +78,7 @@
   
 >>   content varchar(200),
   
->>   pubtime datatime
+>>   pubtime datetime
   
 >> ）charset utf8
 
