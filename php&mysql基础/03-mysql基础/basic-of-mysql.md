@@ -80,6 +80,6 @@
   
 >>   pubtime datetime
   
->> ）charset utf8
+>> ）charset utf8;
 
 **在php与mysql中utf8,在html中utf-8**
