@@ -1,0 +1,35 @@
+1.留言添加
+先建表
+create table liuyanya(
+id int primary key auto_increment,
+name char(20),
+email char(50),
+content varchar(200)
+)charset utf8;
+只要见到表单提交 有数据 无数据两种提交
+有数据才需要链接数据库然后提交过去
+name属性和字段名对应
+
+set names gbk解决在cmd乱码问题
+
+将连接数据库的内容写成一个单独的php
+之后在其他界面引用即可
+连接数据库查询 mysqli_fetch_assoc()获取数据
+存储在一个data二维数组中
+$data[] = array();
+print_r($data);
+怎样在前端显示呢？
+在前端html加入php代码 用php标签包裹起来
+foreach($data as 剑=>值)
+<?php 值?>
+<? }?> 要注意<?php后面有空格 中间没有
+
+
+如何知道自己要删除的是第几行呢
+地址栏传参?分割 参数名=参数值 形状
+$_GET 可以获取
+
+修改显示表中的a标签
+连接到？id=内容。
+添加默认值 input框中value（new）
+form action 提交 留空代表提交当前页面

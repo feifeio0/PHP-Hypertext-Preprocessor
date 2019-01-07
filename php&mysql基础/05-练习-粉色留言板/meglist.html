@@ -14,23 +14,23 @@
         <div id="rside">
             <table>
                 <tr>
-                    <td>ID</td>
+                    <td>id</td>
                     <td>姓名</td>
                     <td>email</td>
                     <td>留言内容</td>
                     <td>操作</td>
                     <td>操作</td>
                 </tr>
-                <?php foreach($data as $k=>$v){?>
+                <?php foreach($data as $k=>$v) {?>
                 <tr>
-                    <td><?php echo $v['id'];?></td>
-                    <td><?php echo $v['name'];?></td>
+                    <td><?php echo $v['id']; ?></td>
+                    <td><?php echo $v['name']; ?></td>
                     <td><span class="badge"><?php echo $v['email'];?></span></td>
                     <td><?php echo $v['content'];?></td>
-                    <td><a href="megdel.php?id=<?php echo $v['id'];?>">删除</a></td>
-                    <td><a href="megup.php?id=<?php echo $v['id'];?>">编辑</a></td>
+                    <td><a href="./megdel.php?id=<?php echo $v['id']; ?>">删除</a></td>
+                    <td><a href="./megup.php?id=<?php echo $v['id']; ?>">编辑</a></td>
                 </tr>
-              <?php }?>
+                <?php }?>
             </table>
         </div>
     </div>
